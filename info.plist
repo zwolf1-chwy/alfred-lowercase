@@ -3,11 +3,38 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>lowercase</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
-	<dict/>
+	<dict>
+		<key>52CF0708-9B3C-48FF-894D-11A467AA9306</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AFB06BB1-004F-4B44-B30D-53FFE9AACAA5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>99F898F1-D725-4FA4-991C-326564B1A1CF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>52CF0708-9B3C-48FF-894D-11A467AA9306</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
 	<key>createdby</key>
 	<string></string>
 	<key>description</key>
@@ -44,7 +71,7 @@
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
-				<string></string>
+				<string>???</string>
 				<key>script</key>
 				<string>./node_modules/.bin/run-node index.js "$1"</string>
 				<key>scriptargtype</key>
@@ -67,17 +94,58 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query.lowercase}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>52CF0708-9B3C-48FF-894D-11A467AA9306</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.hidealfred</string>
+			<key>uid</key>
+			<string>AFB06BB1-004F-4B44-B30D-53FFE9AACAA5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>52CF0708-9B3C-48FF-894D-11A467AA9306</key>
+		<dict>
+			<key>xpos</key>
+			<real>275</real>
+			<key>ypos</key>
+			<real>125</real>
+		</dict>
 		<key>99F898F1-D725-4FA4-991C-326564B1A1CF</key>
 		<dict>
 			<key>xpos</key>
-			<real>80</real>
+			<real>30</real>
 			<key>ypos</key>
-			<real>125</real>
+			<real>120</real>
+		</dict>
+		<key>AFB06BB1-004F-4B44-B30D-53FFE9AACAA5</key>
+		<dict>
+			<key>xpos</key>
+			<real>515</real>
+			<key>ypos</key>
+			<real>155</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
